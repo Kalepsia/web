@@ -1,0 +1,46 @@
+.web-header {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+
+    box-sizing: border-box;
+    background: fade-out($color-deep, 0.15); 
+    color: $color-light-brown;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: background 0.2s;
+    padding: 5px 8px 5px 0;
+    
+    &:hover {
+        background: $color-deep;
+    }
+
+    .web-title {
+        display: flex;
+        text-align: center;
+        font-size: $font-size-base;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: $title-font-family;
+        
+        width: 35%;
+    }
+
+    .form-search {
+        display: flex;
+        align-items: left;
+        font-weight: bold;
+        .busquedas {
+            width: 100px;
+            margin-left: 15px;
+            padding: 5px;
+            background: $color-down;
+            font-family: $main-font-family;
+            color: $color-light-down;
+        }
+    }
+
+
+}
